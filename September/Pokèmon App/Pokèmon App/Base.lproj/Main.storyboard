@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Poke_mon_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="25" translatesAutoresizingMaskIntoConstraints="NO" id="bRn-z1-Cvv">
+                                <rect key="frame" x="50" y="144" width="290" height="290"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bRn-z1-Cvv" secondAttribute="height" multiplier="1:1" id="94I-1a-Hif"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oL9-p2-DKd">
+                                <rect key="frame" x="26" y="673" width="338" height="87"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="I Choose You" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.76472460190000002" green="0.40678280509999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="strokeColor" systemColor="systemOrangeColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Skia-Regular_Bold" family="Skia" pointSize="40"/>
+                                    <directionalEdgeInsets key="contentInsets" top="20" leading="50" bottom="20" trailing="50"/>
+                                    <color key="baseForegroundColor" systemColor="systemCyanColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pokemonButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a3z-dA-pRQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pikachu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lW7-qi-XhK">
+                                <rect key="frame" x="50" y="498.00000000000006" width="290" height="57.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <color key="textColor" systemColor="systemPurpleColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="why-nI-9PX">
+                                <rect key="frame" x="95" y="555" width="200" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lW7-qi-XhK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2bi-fR-fhP"/>
+                            <constraint firstItem="lW7-qi-XhK" firstAttribute="top" secondItem="bRn-z1-Cvv" secondAttribute="bottom" constant="64" id="8qw-pQ-9b7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oL9-p2-DKd" secondAttribute="bottom" constant="50" id="ABa-2c-91x"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lW7-qi-XhK" secondAttribute="trailing" constant="50" id="J1b-Gy-9oM"/>
+                            <constraint firstItem="bRn-z1-Cvv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SEQ-Ni-qGN"/>
+                            <constraint firstAttribute="trailing" secondItem="bRn-z1-Cvv" secondAttribute="trailing" constant="50" id="Seh-Fp-s22"/>
+                            <constraint firstItem="lW7-qi-XhK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="UbK-sY-1fj"/>
+                            <constraint firstItem="oL9-p2-DKd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XRI-pL-JaT"/>
+                            <constraint firstItem="bRn-z1-Cvv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="khI-mb-0IC"/>
+                            <constraint firstItem="bRn-z1-Cvv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="spk-tM-U7T"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="newPokemonButton" destination="oL9-p2-DKd" id="yLX-ug-x4I"/>
+                        <outlet property="pokemonImageView" destination="bRn-z1-Cvv" id="6ha-c4-Xlh"/>
+                        <outlet property="pokemonNameLabel" destination="lW7-qi-XhK" id="Haz-b3-LC3"/>
+                        <outlet property="typesStackView" destination="why-nI-9PX" id="F3T-xw-qF1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="110"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="25" width="475" height="475"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

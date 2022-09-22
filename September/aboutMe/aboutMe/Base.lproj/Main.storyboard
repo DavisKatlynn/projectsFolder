@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--myDog-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="aboutMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="myDog" image="paperplane.fill" catalog="system" selectedImage="paperplane.fill" id="2Y4-7R-P0d"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1415.9420289855072" y="-206.91964285714286"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9sl-QA-ikR">
+            <objects>
+                <viewController id="oPO-AR-hbD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MBd-D2-bR1">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="my Fam" translatesAutoresizingMaskIntoConstraints="NO" id="zzy-qI-Yop">
+                                <rect key="frame" x="0.0" y="44" width="390" height="766"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Family" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awW-bO-b5I">
+                                <rect key="frame" x="20" y="80" width="374" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Me and My Husband " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJ3-qH-ELB">
+                                <rect key="frame" x="20" y="693" width="374" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1eO-3Z-WAL"/>
+                        <color key="backgroundColor" red="0.82027940802126065" green="0.60620996213740463" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="zzy-qI-Yop" firstAttribute="top" secondItem="1eO-3Z-WAL" secondAttribute="top" id="FHq-Ew-5Hp"/>
+                            <constraint firstItem="zzy-qI-Yop" firstAttribute="leading" secondItem="1eO-3Z-WAL" secondAttribute="leading" id="dAo-fd-MJQ"/>
+                            <constraint firstItem="1eO-3Z-WAL" firstAttribute="trailing" secondItem="zzy-qI-Yop" secondAttribute="trailing" id="mWU-kT-lF5"/>
+                            <constraint firstItem="1eO-3Z-WAL" firstAttribute="bottom" secondItem="zzy-qI-Yop" secondAttribute="bottom" id="vyP-k9-CY2"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="wp3-qe-Pze"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fE3-20-9Wf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-107" y="465"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rMw-IJ-KyZ">
+            <objects>
+                <viewController id="FDK-lx-Bxs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k9t-v3-rgw">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doggo" translatesAutoresizingMaskIntoConstraints="NO" id="hFZ-io-fRW">
+                                <rect key="frame" x="0.0" y="44" width="390" height="717"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Doggo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2T-1h-ZJ7">
+                                <rect key="frame" x="20" y="64" width="374" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bear the English Mastiff " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4k-dM-4u4">
+                                <rect key="frame" x="20" y="727" width="374" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5hq-Ig-Ea6"/>
+                        <color key="backgroundColor" red="0.63047418450000003" green="0.70661824449999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="5hq-Ig-Ea6" firstAttribute="bottom" secondItem="hFZ-io-fRW" secondAttribute="bottom" id="SAy-uB-FFC"/>
+                            <constraint firstItem="5hq-Ig-Ea6" firstAttribute="trailing" secondItem="hFZ-io-fRW" secondAttribute="trailing" id="bpG-Ow-Lib"/>
+                            <constraint firstItem="hFZ-io-fRW" firstAttribute="top" secondItem="5hq-Ig-Ea6" secondAttribute="top" id="drn-4W-6tY"/>
+                            <constraint firstItem="hFZ-io-fRW" firstAttribute="leading" secondItem="5hq-Ig-Ea6" secondAttribute="leading" id="eyM-7T-UK6"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="nSE-a6-U09"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AtV-hl-WL1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="923" y="455"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nuW-Hb-AfZ">
+            <objects>
+                <viewController id="103-4p-oCU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e1e-3J-hEd">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Hobbies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQq-cN-fLE">
+                                <rect key="frame" x="20" y="73" width="374" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I love to travel, roadtrips are my favorite!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4F-gh-5q7">
+                                <rect key="frame" x="20" y="736" width="374" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="roadtrips " translatesAutoresizingMaskIntoConstraints="NO" id="IwD-W8-Q2r">
+                                <rect key="frame" x="0.0" y="44" width="390" height="717"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eGY-ex-ffh"/>
+                        <color key="backgroundColor" red="0.64177639136669185" green="0.89892017301979843" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="eGY-ex-ffh" firstAttribute="trailing" secondItem="IwD-W8-Q2r" secondAttribute="trailing" id="3IX-Qk-YRY"/>
+                            <constraint firstItem="IwD-W8-Q2r" firstAttribute="top" secondItem="eGY-ex-ffh" secondAttribute="top" id="CfS-1n-den"/>
+                            <constraint firstItem="eGY-ex-ffh" firstAttribute="bottom" secondItem="IwD-W8-Q2r" secondAttribute="bottom" id="R5H-wK-Hhj"/>
+                            <constraint firstItem="IwD-W8-Q2r" firstAttribute="leading" secondItem="eGY-ex-ffh" secondAttribute="leading" id="fBf-1K-RCw"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="tRh-65-a4L"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s9s-mv-fFe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1888" y="465"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="eVh-H1-Rdb">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="1ON-C8-nOv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="K3m-n6-o76">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="30l-44-Ehl"/>
+                        <segue destination="FDK-lx-Bxs" kind="relationship" relationship="viewControllers" id="sh6-Eb-pTa"/>
+                        <segue destination="103-4p-oCU" kind="relationship" relationship="viewControllers" id="Kaz-qx-HCu"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b5i-9C-5wJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="506" y="-207"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="doggo" width="720" height="540"/>
+        <image name="my Fam" width="828" height="604"/>
+        <image name="paperplane.fill" catalog="system" width="128" height="118"/>
+        <image name="roadtrips " width="1669" height="973"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
