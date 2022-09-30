@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		88E5D18C28E1F56800507E19 /* myFamily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myFamily.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88E5D18C28E1F56800507E19 /* introduceMyFamily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = introduceMyFamily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88E5D18F28E1F56800507E19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88E5D19128E1F56800507E19 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		88E5D19328E1F56800507E19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		88E5D18D28E1F56800507E19 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				88E5D18C28E1F56800507E19 /* myFamily.app */,
+				88E5D18C28E1F56800507E19 /* introduceMyFamily.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,9 +70,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		88E5D18B28E1F56800507E19 /* myFamily */ = {
+		88E5D18B28E1F56800507E19 /* introduceMyFamily */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 88E5D1A028E1F56900507E19 /* Build configuration list for PBXNativeTarget "myFamily" */;
+			buildConfigurationList = 88E5D1A028E1F56900507E19 /* Build configuration list for PBXNativeTarget "introduceMyFamily" */;
 			buildPhases = (
 				88E5D18828E1F56800507E19 /* Sources */,
 				88E5D18928E1F56800507E19 /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = myFamily;
+			name = introduceMyFamily;
 			productName = myFamily;
-			productReference = 88E5D18C28E1F56800507E19 /* myFamily.app */;
+			productReference = 88E5D18C28E1F56800507E19 /* introduceMyFamily.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 88E5D18728E1F56800507E19 /* Build configuration list for PBXProject "myFamily" */;
+			buildConfigurationList = 88E5D18728E1F56800507E19 /* Build configuration list for PBXProject "introduceMyFamily" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				88E5D18B28E1F56800507E19 /* myFamily */,
+				88E5D18B28E1F56800507E19 /* introduceMyFamily */,
 			);
 		};
 /* End PBXProject section */
@@ -290,6 +290,7 @@
 				DEVELOPMENT_TEAM = 479TT666V2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = myFamily/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = introdiceMyFamily;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -318,6 +319,7 @@
 				DEVELOPMENT_TEAM = 479TT666V2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = myFamily/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = introdiceMyFamily;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -339,7 +341,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		88E5D18728E1F56800507E19 /* Build configuration list for PBXProject "myFamily" */ = {
+		88E5D18728E1F56800507E19 /* Build configuration list for PBXProject "introduceMyFamily" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				88E5D19E28E1F56900507E19 /* Debug */,
@@ -348,7 +350,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		88E5D1A028E1F56900507E19 /* Build configuration list for PBXNativeTarget "myFamily" */ = {
+		88E5D1A028E1F56900507E19 /* Build configuration list for PBXNativeTarget "introduceMyFamily" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				88E5D1A128E1F56900507E19 /* Debug */,
