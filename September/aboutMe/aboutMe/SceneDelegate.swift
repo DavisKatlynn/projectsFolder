@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  aboutMe
 //
-//  Created by Katlynn Davis on 9/19/22.
+//  Created by Katlynn Davis on 9/27/22.
 //
 
 import UIKit
