@@ -5,156 +5,121 @@
 //  Created by Katlynn Davis on 9/22/22.
 //
 
-import UIKit
 
-class ViewController: UIViewController {
+import UIKit
+enum Operation {
+    case divide
+    case multiply
+    case add
+    case subtract
+    case percent
+    case positiveOrNegative
+    case allClear
     
-    var first = ""
-    var second = ""
-    var function = ""
-    var result = 0.0
-    var userInput = ""
-    override func viewDidLoad()
-    {
+}
+
+
+class ViewController: UIViewController{
+    var previousNumberPressed = " "
+    var operand: Operation?
+    
+    
+    @IBOutlet weak var calculatedLabel: UILabel!
+    
+    override func viewDidLoad() {
         super.viewDidLoad()
     }
-    @IBOutlet weak var calculatorDisplay: UILabel!
     
-    @IBAction func allClearPressed(_ sender: UIButton) {
-        first = ""
-        second = ""
-        function = ""
-        userInput = ""
-        result = 0.0
-        calculatorDisplay.text = "0"
-    }
-    @IBAction func positiveOrNegativePressed(_ sender: UIButton) {
-        second = userInput
-        let firstInput = calculatorDisplay.text
-        if(function == "+/-")
-        {
-            calculatorDisplay.text = ""
-            userInput += "* -1"
-            calculatorDisplay.text! += userInput
-            result = userInput * Double(-1)
-            
-        }
-    }
-    @IBAction func percentPressed(_ sender: UIButton) {
-        function = "%"
-        first = userInput
-        userInput = ""
-    }
-    @IBAction func dividePressed(_ sender: UIButton) {
-        function = "/"
-        first = userInput
-        userInput = ""
-    }
-    @IBAction func multiplyPressed(_ sender: UIButton) {
-        function = "*"
-        first = userInput
-        userInput = ""
-    }
-    @IBAction func subtractPressed(_ sender: UIButton) {
-        function = "-"
-        first = userInput
-        userInput = ""
-    }
-    @IBAction func addPressed(_ sender: UIButton) {
-        function = "+"
-        first = userInput
-        userInput = ""
-    }
-    @IBAction func equalsPressed(_ sender: UIButton)
-    {
-        second = userInput
-        var firstInput = 0.0
-        var secondInput = 0.0
-    firstInput = Double(first)!
-        secondInput = Double(second)!
-        if(function == "+")
-        {
-            result = firstInput + secondInput
-            calculatorDisplay.text = String(result)
-        }
-        else if (function == "-")
-        {
-            result = firstInput - secondInput
-            calculatorDisplay.text = String(result)
-        }
-        else if (function == "*")
-        {
-            result = firstInput * secondInput
-            calculatorDisplay.text = String(result)
-        }
-        else if (function == "%")
-        {
-            result = firstInput / 100
-            calculatorDisplay.text = String(result)
-        }
-        else
-        {
-            result = firstInput / secondInput
-            calculatorDisplay.text = String(result)
-        }
-    }
-    @IBAction func dotPressed(_ sender: UIButton) {
-        calculatorDisplay.text = ""
-        userInput += "."
-        calculatorDisplay.text! += userInput
-    }
-    @IBAction func zeroPressed(_ sender: UIButton) {
-        calculatorDisplay.text = ""
-        userInput += "0"
-        calculatorDisplay.text = userInput
-    }
-    @IBAction func onePressed(_ sender: UIButton) {
-        calculatorDisplay.text = ""
-        userInput += "1"
-        calculatorDisplay.text! += userInput
-    }
-    @IBAction func twoPressed(_ sender: UIButton) {
-        calculatorDisplay.text = ""
-        userInput += "2"
-        calculatorDisplay.text! += userInput
-    }
-    @IBAction func threePressed(_ sender: UIButton) {
-        calculatorDisplay.text = ""
-        userInput += "3"
-        calculatorDisplay.text! += userInput
-    }
-    @IBAction func fourPressed(_ sender: UIButton) {
-        calculatorDisplay.text = ""
-        userInput += "4"
-        calculatorDisplay.text! += userInput
-    }
-    @IBAction func fivePressed(_ sender: UIButton) {
-        calculatorDisplay.text = ""
-        userInput += "5"
-        calculatorDisplay.text! += userInput
-    }
-    @IBAction func sixPressed(_ sender: UIButton) {
-        calculatorDisplay.text = ""
-        userInput += "6"
-        calculatorDisplay.text! += userInput
-    }
-    @IBAction func sevenPressed(_ sender: UIButton) {
-        calculatorDisplay.text = ""
-        userInput += "7"
-        calculatorDisplay.text! += userInput
-    }
     
-    @IBAction func eightPressed(_ sender: UIButton) {
-        calculatorDisplay.text = ""
-        userInput += "8"
-        calculatorDisplay.text! += userInput
-    }
-    
-    @IBAction func ninePressed(_ sender: UIButton) {
-        calculatorDisplay.text = ""
-        userInput += "9"
-        calculatorDisplay.text! += userInput
-    }
+    @IBAction func numberPressed(_ sender: UIButton) {
+        guard let labelText = calculatedLabel.text, let newNum = sender.titleLabel?.text else {return}
+        
+        if labelText == "0.0" {
+            calculatedLabel.text = newNum
+        } else {
+            calculatedLabel.text = labelText + newNum
+        }
+        
+        
+        
 }
     
-
+    
+    
+    
+    @IBAction func calculations(_ sender: UIButton) {
+        
+        switch sender.titleLabel?.text {
+        case "A/C":
+            calculatedLabel.text = "0.0"
+        case "+":
+            previousNumberPressed = calculatedLabel.text!
+            operand = .add
+            calculatedLabel.text = "0.0"
+        case "-":
+            previousNumberPressed = calculatedLabel.text!
+            operand = .subtract
+            calculatedLabel.text = "0.0"
+        case "/":
+            previousNumberPressed = calculatedLabel.text!
+            operand = .divide
+            calculatedLabel.text = "0.0"
+        case "%":
+            previousNumberPressed = calculatedLabel.text!
+            operand = .percent
+            calculatedLabel.text = "0.0"
+        case "+/-":
+            calculatedLabel.text = "\(Double ((calculatedLabel.text)!)! * -1)"
+        case "X":
+            previousNumberPressed = calculatedLabel.text!
+            operand = .multiply
+            calculatedLabel.text = "0.0"
+            
+        case "=":
+            switch operand {
+                
+            case .add:
+                if let firstNum = Double(previousNumberPressed), let secondNum = Double(calculatedLabel.text!) {
+                    let sum = firstNum + secondNum
+                    calculatedLabel.text = String(sum)
+                }
+            case .subtract:
+                if let firstNum = Double(previousNumberPressed), let secondNum = Double(calculatedLabel.text!) {
+                    let difference = firstNum - secondNum
+                    calculatedLabel.text = String(difference)
+                }
+            case .multiply:
+                if let firstNum = Double(previousNumberPressed), let secondNum = Double(calculatedLabel.text!) {
+                    let product = firstNum * secondNum
+                    calculatedLabel.text = String(product)
+            }
+            case .divide:
+                if let firstNum = Double(previousNumberPressed), let secondNum = Double(calculatedLabel.text!) {
+                    let quotient = firstNum / secondNum
+                    calculatedLabel.text = String(quotient)
+                }
+            case .percent:
+                if let firstNum = Double(previousNumberPressed), let secondNum = Double(calculatedLabel.text!) {
+                    let percentage = firstNum + secondNum / 100
+                    calculatedLabel.text = String(percentage)
+                }
+            case .positiveOrNegative:
+                if let firstNum = Double(previousNumberPressed), let secondNum = Double(calculatedLabel.text!) {
+                    let integer = firstNum + secondNum * -1
+                    calculatedLabel.text = String(integer)
+                }
+            case .allClear:
+                if let firNum = Double(previousNumberPressed), let secondNum = Double(calculatedLabel.text!) {
+                    let clear = "0.0"
+                    calculatedLabel.text = String(clear)
+                }
+                
+            case .none:
+                print("error")
+                
+        }
+        default:
+            print("error")
+        }
+    }
+}

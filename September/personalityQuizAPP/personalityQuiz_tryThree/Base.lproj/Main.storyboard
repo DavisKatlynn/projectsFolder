@@ -261,6 +261,12 @@
                             <constraint firstItem="zYc-8t-muW" firstAttribute="leading" secondItem="vxR-y4-cmA" secondAttribute="leading" constant="16" id="lfb-ML-h9r"/>
                             <constraint firstItem="kId-Hf-yGP" firstAttribute="leading" secondItem="vxR-y4-cmA" secondAttribute="leading" constant="16" id="y0t-Ga-0Jh"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="x9X-2S-dQy"/>
+                                <exclude reference="kId-Hf-yGP"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="Wxs-Wl-eRZ"/>
                     <connections>
