@@ -29,6 +29,16 @@ class ViewController: UIViewController {
         calculatorDisplay.text = "0"
     }
     @IBAction func positiveOrNegativePressed(_ sender: UIButton) {
+        second = userInput
+        let firstInput = calculatorDisplay.text
+        if(function == "+/-")
+        {
+            calculatorDisplay.text = ""
+            userInput += "* -1"
+            calculatorDisplay.text! += userInput
+            result = userInput * Double(-1)
+            
+        }
     }
     @IBAction func percentPressed(_ sender: UIButton) {
         function = "%"
@@ -60,7 +70,7 @@ class ViewController: UIViewController {
         second = userInput
         var firstInput = 0.0
         var secondInput = 0.0
-        firstInput = Double(first)!
+    firstInput = Double(first)!
         secondInput = Double(second)!
         if(function == "+")
         {
@@ -79,7 +89,7 @@ class ViewController: UIViewController {
         }
         else if (function == "%")
         {
-            result = firstInput * secondInput
+            result = firstInput / 100
             calculatorDisplay.text = String(result)
         }
         else

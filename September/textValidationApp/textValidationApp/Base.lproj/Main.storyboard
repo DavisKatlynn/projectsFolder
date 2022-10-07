@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="textValidationApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VfR-sD-a4E">
+                                <rect key="frame" x="147" y="76" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FDb-pt-w7l">
+                                <rect key="frame" x="39" y="76" width="312" height="57.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="usernameChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="B3M-pk-Plb"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Required" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcL-d4-Vqg">
+                                <rect key="frame" x="39" y="143.66666666666666" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o47-pb-cmz">
+                                <rect key="frame" x="39" y="172.66666666666666" width="312" height="57.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="passwordChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Otu-3h-f5s"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Required" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PX4-TD-cvN">
+                                <rect key="frame" x="39" y="240.33333333333334" width="68" height="21.000000000000028"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ac3-FB-kcx">
+                                <rect key="frame" x="113.33333333333333" y="293.33333333333331" width="163.66666666666669" height="69"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Submit">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="46"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="submitAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ege-dp-FNk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.23467032780352326" green="0.23467032780352326" blue="0.23467032780352326" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="FDb-pt-w7l" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="2XG-Va-Rfu"/>
+                            <constraint firstItem="ac3-FB-kcx" firstAttribute="centerX" secondItem="o47-pb-cmz" secondAttribute="centerX" id="BVp-ug-9qg"/>
+                            <constraint firstItem="o47-pb-cmz" firstAttribute="centerX" secondItem="FDb-pt-w7l" secondAttribute="centerX" id="FDn-1a-kEZ"/>
+                            <constraint firstItem="kcL-d4-Vqg" firstAttribute="leading" secondItem="FDb-pt-w7l" secondAttribute="leading" id="NZi-59-jCc"/>
+                            <constraint firstItem="FDb-pt-w7l" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="TrG-0a-LLP"/>
+                            <constraint firstItem="o47-pb-cmz" firstAttribute="width" secondItem="FDb-pt-w7l" secondAttribute="width" id="YCf-BO-Vdr"/>
+                            <constraint firstItem="PX4-TD-cvN" firstAttribute="leading" secondItem="o47-pb-cmz" secondAttribute="leading" id="aMz-RY-8Ez"/>
+                            <constraint firstItem="PX4-TD-cvN" firstAttribute="top" secondItem="o47-pb-cmz" secondAttribute="bottom" constant="10" id="hYc-R2-Afl"/>
+                            <constraint firstItem="o47-pb-cmz" firstAttribute="top" secondItem="FDb-pt-w7l" secondAttribute="bottom" constant="39" id="itg-Sw-gzQ"/>
+                            <constraint firstItem="FDb-pt-w7l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="uqA-RD-2TB"/>
+                            <constraint firstItem="ac3-FB-kcx" firstAttribute="top" secondItem="o47-pb-cmz" secondAttribute="bottom" constant="63" id="wmA-UQ-A3Q"/>
+                            <constraint firstItem="kcL-d4-Vqg" firstAttribute="top" secondItem="FDb-pt-w7l" secondAttribute="bottom" constant="10" id="xCL-14-aZG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="passwordError" destination="PX4-TD-cvN" id="bU7-m2-87l"/>
+                        <outlet property="passwordTF" destination="o47-pb-cmz" id="pFU-7d-Kd4"/>
+                        <outlet property="submitButton" destination="ac3-FB-kcx" id="nqe-lb-dF0"/>
+                        <outlet property="usernameError" destination="kcL-d4-Vqg" id="EyH-kh-rh6"/>
+                        <outlet property="usernameTF" destination="FDb-pt-w7l" id="zAe-HP-AFM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60" y="91.706161137440759"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
