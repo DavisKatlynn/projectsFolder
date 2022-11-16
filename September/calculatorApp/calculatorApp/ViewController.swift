@@ -109,7 +109,7 @@ class ViewController: UIViewController{
                     calculatedLabel.text = String(integer)
                 }
             case .allClear:
-                if let firNum = Double(previousNumberPressed), let secondNum = Double(calculatedLabel.text!) {
+                if let firstNum = Double(previousNumberPressed), let secondNum = Double(calculatedLabel.text!) {
                     let clear = "0.0"
                     calculatedLabel.text = String(clear)
                 }

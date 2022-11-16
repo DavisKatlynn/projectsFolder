@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jdw-uz-9sk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jdw-uz-9sk">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -36,7 +37,7 @@
                         <imageReference key="image" image="person.circle" catalog="system" symbolScale="medium"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="WBA-Nc-bZn">
-                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -55,19 +56,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="all 3 of us " translatesAutoresizingMaskIntoConstraints="NO" id="2Ka-Ca-Q7p">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="all 3 of us " translatesAutoresizingMaskIntoConstraints="NO" id="2Ka-Ca-Q7p">
                                 <rect key="frame" x="16" y="220" width="358" height="541"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Me, Bear, Levi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IoE-kv-wfu">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Me, Bear, Levi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IoE-kv-wfu">
                                 <rect key="frame" x="87" y="220" width="216" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="34"/>
                                 <color key="textColor" red="0.93114632369999994" green="0.0" blue="0.79497904019999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Introducing My Family" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C5I-bs-qmq">
-                                <rect key="frame" x="16" y="24" width="358" height="169"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Introducing My Family" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C5I-bs-qmq">
+                                <rect key="frame" x="16" y="91" width="358" height="95.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="124" id="Pm4-Rp-gqW"/>
                                 </constraints>
@@ -79,10 +78,14 @@
                         <viewLayoutGuide key="safeArea" id="NwI-B2-YQA"/>
                         <color key="backgroundColor" systemColor="systemCyanColor"/>
                         <constraints>
+                            <constraint firstItem="IoE-kv-wfu" firstAttribute="centerX" secondItem="2Ka-Ca-Q7p" secondAttribute="centerX" id="24X-bL-alM"/>
                             <constraint firstItem="C5I-bs-qmq" firstAttribute="top" secondItem="NwI-B2-YQA" secondAttribute="top" id="GQt-qA-fnF"/>
-                            <constraint firstItem="NwI-B2-YQA" firstAttribute="trailing" secondItem="C5I-bs-qmq" secondAttribute="trailing" constant="16" id="LkM-WP-CmV"/>
+                            <constraint firstItem="NwI-B2-YQA" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="C5I-bs-qmq" secondAttribute="trailing" id="LkM-WP-CmV"/>
+                            <constraint firstItem="IoE-kv-wfu" firstAttribute="top" secondItem="C5I-bs-qmq" secondAttribute="bottom" constant="33.333333333333314" id="Ono-46-MCs"/>
                             <constraint firstItem="NwI-B2-YQA" firstAttribute="bottom" secondItem="C5I-bs-qmq" secondAttribute="bottom" constant="549" id="Ybe-HK-rgp"/>
-                            <constraint firstItem="C5I-bs-qmq" firstAttribute="leading" secondItem="NwI-B2-YQA" secondAttribute="leading" constant="16" id="nFC-Vm-EWQ"/>
+                            <constraint firstItem="IoE-kv-wfu" firstAttribute="centerX" secondItem="C5I-bs-qmq" secondAttribute="centerX" id="gB9-jd-XqD"/>
+                            <constraint firstItem="C5I-bs-qmq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="NwI-B2-YQA" secondAttribute="leading" id="nFC-Vm-EWQ"/>
+                            <constraint firstItem="IoE-kv-wfu" firstAttribute="top" secondItem="2Ka-Ca-Q7p" secondAttribute="top" id="oVi-YC-x8L"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wff-uE-F9Q"/>
@@ -96,7 +99,7 @@
             <objects>
                 <viewController id="DLe-pn-pbb" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0HZ-dM-edN">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Our Doggo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIC-kT-p8N">
@@ -136,7 +139,7 @@
             <objects>
                 <viewController id="TWG-nG-FYt" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zrN-Zm-ESR">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Davis Family" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3S-Ec-7Ou">
@@ -173,7 +176,7 @@
                 <navigationController id="IlC-fc-gbq" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Doggo" image="arrowshape.turn.up.right.fill" catalog="system" selectedImage="arrowshape.turn.up.right.fill" id="l6E-RB-e19"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="lwG-DV-Nnb">
-                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -192,7 +195,7 @@
                 <navigationController id="Und-db-igj" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Me &amp; Husband" image="arrowshape.turn.up.right" catalog="system" selectedImage="arrowshape.turn.up.right.fill" id="Eyy-8p-Ouh"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zwY-M6-TQL">
-                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -211,11 +214,11 @@
     <resources>
         <image name="8 week old bear" width="538" height="344"/>
         <image name="all 3 of us " width="848" height="1023"/>
-        <image name="arrowshape.turn.up.right" catalog="system" width="128" height="106"/>
-        <image name="arrowshape.turn.up.right.fill" catalog="system" width="128" height="106"/>
+        <image name="arrowshape.turn.up.right" catalog="system" width="128" height="104"/>
+        <image name="arrowshape.turn.up.right.fill" catalog="system" width="128" height="104"/>
         <image name="bear now" width="828" height="1792"/>
         <image name="me and husband" width="960" height="1792"/>
-        <image name="person.circle" catalog="system" width="128" height="121"/>
+        <image name="person.circle" catalog="system" width="128" height="123"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemCyanColor">
             <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
