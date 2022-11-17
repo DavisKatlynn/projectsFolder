@@ -1,16 +1,13 @@
 //
 //  ViewController.swift
-//  scoreKeeperApp
+//  ScoreKeeperApp
 //
-//  Created by Katlynn Davis on 11/11/22.
+//  Created by Katlynn Davis on 11/10/22.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
-    
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
