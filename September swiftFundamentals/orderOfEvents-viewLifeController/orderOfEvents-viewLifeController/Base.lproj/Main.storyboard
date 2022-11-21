@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="caB-So-FyX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--FirstVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="firstVC" customModule="orderOfEvents_viewLifeController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SQd-Xe-5T6">
+                                <rect key="frame" x="91.5" y="429.5" width="231" height="37"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Show Me The Life Cylce">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="IOK-zh-cHU" kind="show" id="OOv-ZC-m7Z"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="0.58110086790315196" blue="0.20305354019559485" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SQd-Xe-5T6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3l5-La-SEi"/>
+                            <constraint firstItem="SQd-Xe-5T6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SKq-Qk-Mbu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="NTu-F7-Fwb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="128.57142857142856"/>
+        </scene>
+        <!--MiddleVC-->
+        <scene sceneID="Sat-4V-xek">
+            <objects>
+                <viewController id="IOK-zh-cHU" customClass="middleVC" customModule="orderOfEvents_viewLifeController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gjo-d5-aP1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nothing has happened yet." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBV-ey-xjq">
+                                <rect key="frame" x="86" y="108" width="242" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azM-aJ-HUP">
+                                <rect key="frame" x="143.5" y="808" width="127" height="34"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go to LastVC">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="h3d-42-mgc" kind="show" id="QGE-PN-ai7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FgG-Ax-PNx"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="oBV-ey-xjq" firstAttribute="centerX" secondItem="gjo-d5-aP1" secondAttribute="centerX" id="btM-ku-w9b"/>
+                            <constraint firstItem="FgG-Ax-PNx" firstAttribute="bottom" secondItem="azM-aJ-HUP" secondAttribute="bottom" constant="20" id="gro-t5-X1z"/>
+                            <constraint firstItem="oBV-ey-xjq" firstAttribute="top" secondItem="FgG-Ax-PNx" secondAttribute="top" constant="20" id="tDf-Om-Rcs"/>
+                            <constraint firstItem="azM-aJ-HUP" firstAttribute="centerX" secondItem="gjo-d5-aP1" secondAttribute="centerX" id="vRZ-NS-LF2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="m7q-Iv-UkR"/>
+                    <connections>
+                        <outlet property="middleVCLabel" destination="oBV-ey-xjq" id="TE5-GF-FXF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lze-5Z-xQq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1705.7971014492755" y="128.57142857142856"/>
+        </scene>
+        <!--LastVC-->
+        <scene sceneID="yYu-JC-rfa">
+            <objects>
+                <viewController id="h3d-42-mgc" customClass="lastVC" customModule="orderOfEvents_viewLifeController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FiZ-FP-a2H">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Go back to see if anything happened" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hm6-DO-OBz">
+                                <rect key="frame" x="42" y="108" width="330" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="R0b-1x-IEa"/>
+                        <color key="backgroundColor" red="0.87058823529999996" green="0.33010775537768083" blue="0.034325176237230595" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Hm6-DO-OBz" firstAttribute="top" secondItem="R0b-1x-IEa" secondAttribute="top" constant="20" id="7vY-qj-P0a"/>
+                            <constraint firstItem="Hm6-DO-OBz" firstAttribute="centerX" secondItem="FiZ-FP-a2H" secondAttribute="centerX" id="9be-3j-gfI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9yu-TH-dox"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="str-8y-8i9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2357.971014492754" y="128.57142857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qaO-DN-H45">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="caB-So-FyX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pwZ-Ab-ntZ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9xB-hu-e3B"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VlS-uF-gU4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="222" y="129"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
