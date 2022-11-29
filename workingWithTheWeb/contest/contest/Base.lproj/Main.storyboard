@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wxu-8t-VJm">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="contest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Enter Your Email Address For A Chance To Win!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9js-Lr-W6g">
+                                <rect key="frame" x="16" y="227" width="358" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Adress" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iAe-Gg-daN">
+                                <rect key="frame" x="16" y="256" width="358" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eg2-Im-kEd">
+                                <rect key="frame" x="131" y="337" width="128" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Enter Contest"/>
+                                <connections>
+                                    <action selector="enterButtonDidTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ufo-PC-aa5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9js-Lr-W6g" secondAttribute="trailing" constant="16" id="2bX-lJ-tcr"/>
+                            <constraint firstItem="9js-Lr-W6g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="136" id="2qu-kj-6NV"/>
+                            <constraint firstItem="iAe-Gg-daN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="7E3-9b-KPx"/>
+                            <constraint firstItem="9js-Lr-W6g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="8bS-Q8-dWS"/>
+                            <constraint firstItem="Eg2-Im-kEd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="131" id="P6t-yL-Qsb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Eg2-Im-kEd" secondAttribute="bottom" constant="438" id="byS-cS-4Mb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Eg2-Im-kEd" secondAttribute="trailing" constant="131" id="mz8-Y6-j4U"/>
+                            <constraint firstItem="iAe-Gg-daN" firstAttribute="top" secondItem="9js-Lr-W6g" secondAttribute="bottom" constant="8" symbolic="YES" id="wkf-pA-gLy"/>
+                            <constraint firstItem="Eg2-Im-kEd" firstAttribute="top" secondItem="iAe-Gg-daN" secondAttribute="bottom" constant="47" id="wlI-1t-dFN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iAe-Gg-daN" secondAttribute="trailing" constant="16" id="zEl-tc-lDP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="pma-Lm-1nq"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="iAe-Gg-daN" id="Frh-El-WNx"/>
+                        <segue destination="ngm-Az-NOx" kind="show" identifier="contestSegue" id="XZg-Z1-S3w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1003.0769230769231" y="-95.260663507109001"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Bud-2X-pRi">
+            <objects>
+                <viewController id="ngm-Az-NOx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y2b-h3-dC4">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congradulations! You have successfully entered the contest!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zvl-6n-ZiA">
+                                <rect key="frame" x="0.0" y="91" width="390" height="719"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0xs-I4-RWG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0xs-I4-RWG" firstAttribute="trailing" secondItem="Zvl-6n-ZiA" secondAttribute="trailing" id="Dkf-G9-Ijv"/>
+                            <constraint firstItem="0xs-I4-RWG" firstAttribute="bottom" secondItem="Zvl-6n-ZiA" secondAttribute="bottom" id="LW9-3g-4O5"/>
+                            <constraint firstItem="Zvl-6n-ZiA" firstAttribute="top" secondItem="0xs-I4-RWG" secondAttribute="top" id="eD8-PC-cp5"/>
+                            <constraint firstItem="Zvl-6n-ZiA" firstAttribute="leading" secondItem="0xs-I4-RWG" secondAttribute="leading" id="giK-JL-q1L"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vrX-AH-P8z"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AsX-dJ-zhx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1840" y="-95.260663507109001"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZvE-FS-wGX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wxu-8t-VJm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cp4-fI-luU">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1KX-G8-fTa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xpr-9q-G9M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="73.84615384615384" y="-95.260663507109001"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
