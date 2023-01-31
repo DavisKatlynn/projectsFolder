@@ -16,7 +16,7 @@
 		01CB13C02074DDD60068A38A /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CB13BF2074DDD60068A38A /* Database.swift */; };
 		01CB13C22074DFE50068A38A /* BillListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CB13C12074DFE50068A38A /* BillListTableViewController.swift */; };
 		5AA658032509526500D1724C /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA658022509526500D1724C /* Bill.swift */; };
-		F74160C426B36AE600B6ABB1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74160C326B36AE600B6ABB1 /* SceneDelegate.swift */; };
+		F74160C626B36AFF00B6ABB1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74160C526B36AFF00B6ABB1 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,7 @@
 		01CB13BF2074DDD60068A38A /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		01CB13C12074DFE50068A38A /* BillListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillListTableViewController.swift; sourceTree = "<group>"; };
 		5AA658022509526500D1724C /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
-		F74160C326B36AE600B6ABB1 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F74160C526B36AFF00B6ABB1 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				0115FAC62072BD440061B56F /* AppDelegate.swift */,
-				F74160C326B36AE600B6ABB1 /* SceneDelegate.swift */,
+				F74160C526B36AFF00B6ABB1 /* SceneDelegate.swift */,
 				01615C05209B4D9B0017CDB2 /* View Controllers */,
 				01615C06209B4DA40017CDB2 /* Model */,
 				0115FACD2072BD440061B56F /* Assets.xcassets */,
@@ -169,7 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01CB13C02074DDD60068A38A /* Database.swift in Sources */,
-				F74160C426B36AE600B6ABB1 /* SceneDelegate.swift in Sources */,
+				F74160C626B36AFF00B6ABB1 /* SceneDelegate.swift in Sources */,
 				01CB13BC20748ED70068A38A /* BillDetailTableViewController.swift in Sources */,
 				01CB13BE2074A8DD0068A38A /* Bill+Extras.swift in Sources */,
 				0115FAC72072BD440061B56F /* AppDelegate.swift in Sources */,

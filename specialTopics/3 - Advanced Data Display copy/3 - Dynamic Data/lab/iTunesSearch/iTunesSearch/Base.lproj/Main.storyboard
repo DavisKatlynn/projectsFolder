@@ -184,13 +184,13 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3VQ-C4-Edh">
                                                     <rect key="frame" x="0.0" y="0.0" width="108" height="107"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VhP-e9-Cqf">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VhP-e9-Cqf">
                                                     <rect key="frame" x="0.0" y="111" width="108" height="20.333333333333343"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0Q-Y2-Yde">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0Q-Y2-Yde">
                                                     <rect key="frame" x="0.0" y="135.33333333333334" width="108" height="20.333333333333343"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -205,6 +205,12 @@
                                             </constraints>
                                         </stackView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="qGn-iQ-hkq" secondAttribute="bottom" constant="17.333333333333343" id="Cxw-fx-bDw"/>
+                                        <constraint firstItem="qGn-iQ-hkq" firstAttribute="top" secondItem="cSf-gY-124" secondAttribute="top" id="cqn-Rs-clM"/>
+                                        <constraint firstItem="qGn-iQ-hkq" firstAttribute="leading" secondItem="cSf-gY-124" secondAttribute="leading" id="erH-BX-e2g"/>
+                                        <constraint firstItem="qGn-iQ-hkq" firstAttribute="centerX" secondItem="cSf-gY-124" secondAttribute="centerX" id="rJr-w9-aX6"/>
+                                    </constraints>
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="108" height="173"/>
                                 <connections>
