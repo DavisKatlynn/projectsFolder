@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fsd-Uq-MUZ">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pick A Random User -->
+        <scene sceneID="P32-ph-jw3">
+            <objects>
+                <viewController id="H4G-lS-eou" customClass="ViewController" customModule="randomUserNameCodeChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qpi-9S-KIZ">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ff5-x5-kQT">
+                                <rect key="frame" x="16" y="759" width="358" height="51"/>
+                                <color key="tintColor" red="1" green="0.6499856692" blue="0.26799132129999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Pick Random User"/>
+                                <connections>
+                                    <action selector="whoWinsButtonTapped:" destination="H4G-lS-eou" eventType="touchUpInside" id="9EQ-MX-St7"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FYh-IA-n5f" userLabel="namesTable View">
+                                <rect key="frame" x="16" y="260" width="358" height="294"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="294" id="mAE-xe-pJR"/>
+                                </constraints>
+                                <color key="separatorColor" systemColor="systemYellowColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="displayUserCell" rowHeight="61" id="YAd-LV-H0B" customClass="RandomUserTableViewCell" customModule="randomUserNameCodeChallenge" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.333332061767578" width="358" height="61"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YAd-LV-H0B" id="LRk-kD-XIB">
+                                            <rect key="frame" x="0.0" y="0.0" width="358" height="61"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VpH-sS-GZV">
+                                                    <rect key="frame" x="20" y="11" width="49" height="34"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="VpH-sS-GZV" firstAttribute="top" secondItem="LRk-kD-XIB" secondAttribute="topMargin" id="C2R-PI-TbQ"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="VpH-sS-GZV" secondAttribute="bottom" constant="5" id="Rin-tq-iqo"/>
+                                                <constraint firstItem="VpH-sS-GZV" firstAttribute="leading" secondItem="LRk-kD-XIB" secondAttribute="leadingMargin" id="YqM-fH-bNy"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VpH-sS-GZV" secondAttribute="trailing" constant="20" symbolic="YES" id="hdw-ds-nlI"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.96907152009999997" blue="0.66880928299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <outlet property="nameLabelText" destination="VpH-sS-GZV" id="OW8-dI-6T9"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="H4G-lS-eou" id="aZZ-GU-Fs9"/>
+                                    <outlet property="delegate" destination="H4G-lS-eou" id="SWK-JP-C8n"/>
+                                </connections>
+                            </tableView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name Here..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Din-Tt-tgl">
+                                <rect key="frame" x="16" y="147.66666666666666" width="358" height="34"/>
+                                <color key="backgroundColor" red="1" green="0.58110086790000004" blue="0.20305354019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idv-Td-R51">
+                                <rect key="frame" x="284" y="190.66666666666666" width="90" height="34.333333333333343"/>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system" title="Add "/>
+                                <connections>
+                                    <action selector="addNameTapped:" destination="H4G-lS-eou" eventType="touchUpInside" id="QkS-AP-YOg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NkO-tc-5Pd"/>
+                        <color key="backgroundColor" red="1" green="0.96907152007831421" blue="0.66880928299265874" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="ff5-x5-kQT" firstAttribute="top" secondItem="NkO-tc-5Pd" secondAttribute="top" constant="668" id="7VR-39-9rF"/>
+                            <constraint firstItem="ff5-x5-kQT" firstAttribute="top" secondItem="FYh-IA-n5f" secondAttribute="bottom" constant="205" id="DV2-T4-dTG"/>
+                            <constraint firstItem="FYh-IA-n5f" firstAttribute="leading" secondItem="Din-Tt-tgl" secondAttribute="leading" id="EzA-QK-R7Y"/>
+                            <constraint firstItem="FYh-IA-n5f" firstAttribute="trailing" secondItem="Din-Tt-tgl" secondAttribute="trailing" id="GK7-jw-brL"/>
+                            <constraint firstItem="ff5-x5-kQT" firstAttribute="leading" secondItem="NkO-tc-5Pd" secondAttribute="leading" constant="16" id="IId-EH-hjx"/>
+                            <constraint firstItem="FYh-IA-n5f" firstAttribute="leading" secondItem="ff5-x5-kQT" secondAttribute="leading" id="Nbg-20-hjg"/>
+                            <constraint firstItem="idv-Td-R51" firstAttribute="top" secondItem="Din-Tt-tgl" secondAttribute="bottom" constant="9" id="P80-6T-SGP"/>
+                            <constraint firstItem="FYh-IA-n5f" firstAttribute="trailing" secondItem="ff5-x5-kQT" secondAttribute="trailing" id="Sp5-GK-qIa"/>
+                            <constraint firstItem="ff5-x5-kQT" firstAttribute="bottom" secondItem="NkO-tc-5Pd" secondAttribute="bottom" id="ajj-oS-dqp"/>
+                            <constraint firstItem="NkO-tc-5Pd" firstAttribute="trailing" secondItem="idv-Td-R51" secondAttribute="trailing" constant="16" id="fjF-9j-u34"/>
+                            <constraint firstItem="FYh-IA-n5f" firstAttribute="top" secondItem="idv-Td-R51" secondAttribute="bottom" constant="35" id="fx9-E9-gmp"/>
+                            <constraint firstItem="NkO-tc-5Pd" firstAttribute="trailing" secondItem="ff5-x5-kQT" secondAttribute="trailing" constant="16" id="xwf-J3-bZU"/>
+                            <constraint firstItem="idv-Td-R51" firstAttribute="leading" secondItem="NkO-tc-5Pd" secondAttribute="leading" constant="284" id="yut-pG-GeO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pick A Random User " id="f9R-hD-FV7"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="Din-Tt-tgl" id="gdo-Dk-sQ9"/>
+                        <outlet property="tableView" destination="FYh-IA-n5f" id="IcQ-Rh-vuE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="saW-xF-3WE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1427.6923076923076" y="194.78672985781989"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Zsx-no-Sv6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fsd-Uq-MUZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="B0B-0G-GGU">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="H4G-lS-eou" kind="relationship" relationship="rootViewController" id="0od-Yc-ZjT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jHN-kl-hJ9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="656.92307692307691" y="194.78672985781989"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
