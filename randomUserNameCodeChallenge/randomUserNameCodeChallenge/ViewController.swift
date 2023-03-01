@@ -8,6 +8,7 @@
 import UIKit
 //defines a class called ViewController that inherits from UIViewController and adopts the UITableViewDataSource and UITableViewDelegate protocols
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
     @IBOutlet var tableView: UITableView!
     @IBOutlet var nameTextField: UITextField!
     
