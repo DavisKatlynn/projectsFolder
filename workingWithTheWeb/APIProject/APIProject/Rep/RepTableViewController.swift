@@ -13,6 +13,7 @@ class RepTableViewController: UITableViewController {
     
     var items = [Rep]()
     var controller = RepController()
+    
     func fetchMatchingItems() {
         self.items = []
         let searchTerm = searchBar.text ?? ""

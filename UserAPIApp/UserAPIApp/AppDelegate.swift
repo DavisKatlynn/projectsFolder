@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  codeChallenge#2
+//  UserAPIApp
 //
-//  Created by Katlynn Davis on 2/28/23.
+//  Created by Katlynn Davis on 2/27/23.
 //
 
 import UIKit

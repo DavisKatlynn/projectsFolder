@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "80A07183-8FD0-41B9-8CAB-BF353E5A5225"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AA5A492E-868F-45C3-8B26-C76A84765D4A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UserAPIApp/UserDisplayController/DisplayUsersTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "DisplayUsersTableViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "AA5A492E-868F-45C3-8B26-C76A84765D4A - 1b886155cfb5f525"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UserAPIApp.DisplayUsersTableViewController.inclusionParameters.getter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "UserAPIApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/junnemurdock/Projects/mtechProjects2/UserAPIApp/UserAPIApp/UserDisplayController/DisplayUsersTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "AA5A492E-868F-45C3-8B26-C76A84765D4A - ec3b23ec01f87509"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UserAPIApp.DisplayUsersTableViewController.inclusionParameters.setter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "UserAPIApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/junnemurdock/Projects/mtechProjects2/UserAPIApp/UserAPIApp/UserDisplayController/DisplayUsersTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "AA5A492E-868F-45C3-8B26-C76A84765D4A - bb8d152e345029fc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UserAPIApp.DisplayUsersTableViewController.inclusionParameters.modify : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "UserAPIApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/junnemurdock/Projects/mtechProjects2/UserAPIApp/UserAPIApp/UserDisplayController/DisplayUsersTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "AA5A492E-868F-45C3-8B26-C76A84765D4A - 5f96899174c46e85"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UserAPIApp.DisplayUsersTableViewController.inclusionParameters.modify : Swift.Array&lt;Swift.String&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "UserAPIApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/junnemurdock/Projects/mtechProjects2/UserAPIApp/UserAPIApp/UserDisplayController/DisplayUsersTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "AA5A492E-868F-45C3-8B26-C76A84765D4A - 2720c0c413d75a87"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UserAPIApp.DisplayUsersTableViewController.init(style: __C.UITableViewStyle) -&gt; UserAPIApp.DisplayUsersTableViewController"
+                  moduleName = "UserAPIApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/junnemurdock/Projects/mtechProjects2/UserAPIApp/UserAPIApp/UserDisplayController/DisplayUsersTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "AA5A492E-868F-45C3-8B26-C76A84765D4A - e2910ff5b8e752cd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UserAPIApp.DisplayUsersTableViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; UserAPIApp.DisplayUsersTableViewController"
+                  moduleName = "UserAPIApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/junnemurdock/Projects/mtechProjects2/UserAPIApp/UserAPIApp/UserDisplayController/DisplayUsersTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "AA5A492E-868F-45C3-8B26-C76A84765D4A - 6f73c279d3024296"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UserAPIApp.DisplayUsersTableViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;UserAPIApp.DisplayUsersTableViewController&gt;"
+                  moduleName = "UserAPIApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/junnemurdock/Projects/mtechProjects2/UserAPIApp/UserAPIApp/UserDisplayController/DisplayUsersTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
